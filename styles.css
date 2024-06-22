@@ -1,0 +1,73 @@
+:root{
+    --color1: #F0EFFB;
+    --color2: #F39D50;
+    --color3: #5C297C;
+    box-sizing: border-box;
+}
+
+@media (prefer-reduced-motion:no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+    body{
+        background: repeating-radial-gradient(
+            var(--color1),
+            var(--color1)20%,
+            var(--color2)
+        );
+        /*background-image: url(https://th.bing.com/th/id/OIP.AN1z58D-AVyKGQM-x0fXTgHaE7?rs=1&pid=ImgDetMain);*/
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        min-height: 75px;
+        padding: 0 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        background-color: #f8b57b;
+    }
+    #header-img{
+        width: 10vw;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .pyramid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 190px;
+        margin-top: 50px;
+    }
+
+    .pyramid input[type='submit'] {
+        max-width: 150px;
+        width: 100%;
+        height: 30px;
+        margin: 15px 0;
+        border: 0;
+        border-radius: 10px;
+        background-color: #f1c40f;
+    }
